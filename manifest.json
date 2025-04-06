@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Occurrence Highlighter",
+    "version": "1.0",
+    "description": "This extension helps to find the occurrence of the selected text.",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
